@@ -1,0 +1,14 @@
+<Alloy>
+    <View id="mapContainer" keepScreenOn="true">
+    	<View id="locationSearch">
+    		<Label id="markerLocation1">Your Current Location</Label>
+    		<Label id="markerLocation2"></Label>
+    	</View>
+    </View>
+   	<View id="bottomToolsView" layout="vertical">
+		<Button id="btnRequestService">Request</Button>
+    </View>
+    <!--
+    <View id="vistaDireccion"></View>
+    -->
+</Alloy>

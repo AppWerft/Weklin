@@ -1,0 +1,23 @@
+<Alloy>
+	<Widget src="kr.yostudio.drawer">
+		<View class="menuWrap" role="leftView">
+			<Require id="menuC" src="menu" />
+		</View>
+		<Window id="ventana" platform="ios" role="centerWindow" title="Weklin" tintColor="white" barColor="#489B53" navTintColor="white">
+			<LeftNavButton>
+				<View>
+					<Button class="ion-android-menu menuBtn" onClick="onMenuButtonClick"/>
+				</View>
+			</LeftNavButton>
+			<Require src="mapa" id="principal" /> 
+		</Window>
+		<Window platform="android" role="centerWindow">
+			<ActionBar id="ventana" onHomeIconItemSelected="onMenuButtonClick" title="Weklin" />
+			<Menu>
+				<MenuItem id="item1" title="Mi Cuenta"/>
+				<MenuItem id="item2" title="Cerrar Sesión" onClick="logOut"/>
+			</Menu>
+			<Require src="mapa" id="principal" />
+		</Window>
+	</Widget>
+</Alloy>

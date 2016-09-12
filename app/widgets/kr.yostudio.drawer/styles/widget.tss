@@ -1,0 +1,18 @@
+"Window": {
+	tintColor:"#ffffff",
+	barColor:"#186346",
+	navTintColor:"#ffffff",
+ 	titleAttributes:{
+ 		color: "#ffffff"
+ 	}
+}
+
+"Label": {
+	color: '#000', 
+	font: {
+		fontSize: 17,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}

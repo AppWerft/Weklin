@@ -1,0 +1,38 @@
+<Alloy>
+	<View top="0" left="0" right="0" bottom="0">
+		<View id="mapview" module="ti.map" ns="ti.Map" animate="true" regionFit="true" userLocation="true" top="0" left="0" right="0" bottom="0">
+			<View zIndex="15" width="50dp" height="110dp" touchEnabled="false">
+				<ImageView id="pinYo" image="/marker.png" width="50dp" height="50dp" top="0" />
+			</View>
+		</View>
+		<Label id="markerLocation1" zIndex="11" />
+		<View id="contenedorSolicitudes">
+			<View id="selectorServicio">
+				<View id="botoneraServicios" width="Ti.UI.SIZE" layout="horizontal" height="Ti.UI.SIZE" />
+			</View>
+			<View id="selectorCantidades">
+				<View layout="horizontal" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+					<Label color="black" touchEnabled="false" text="BR:" />
+					<Button class="masPequeno" onClick="masHabitaciones" />
+					<Label id="txtBedrooms" />
+					<Button class="menosPequeno" onClick="menosHabitaciones" />
+					<ImageView backgroundColor="black" top="0" bottom="0" width="1" left="10dp" />
+					<Label left="10dp" color="black" touchEnabled="false" text="BA:" />
+					<Button class="masPequeno" onClick="masBanos" />
+					<Label id="txtBathrooms" />
+					<Button class="menosPequeno" onClick="menosBanos" />
+				</View>
+			</View>
+			<View height="60dp" backgroundColor="white" bottom="0" zIndex="11">
+				<Label id="costoPrevio" text="$ 0.00" />
+				<Button right="10dp" class="boton" top="10dp" title="Confirm" onClick="confirmar" />
+			</View>
+		</View>
+		<View id="addonsServicio">
+			<Button right="5dp" class="cerrarPeque" onClick="resetBaniosyHabitaciones" />
+			<Label id="tituloServicio" />
+			<Label id="descripcionCompleta" />
+			<View id="espacioAddons" layout="vertical" height="Ti.UI.SIZE" />
+		</View>
+	</View>
+</Alloy>

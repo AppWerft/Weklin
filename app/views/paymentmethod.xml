@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="container">
+		<Label text="paymentmethod"></Label>
+	</View>
+</Alloy>

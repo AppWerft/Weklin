@@ -1,0 +1,23 @@
+<Alloy>
+    <View class="container">
+        <ListView id="listViewMenu">
+            <Templates>
+                <ItemTemplate name="menuItem" class="menuItem">
+                    <Label bindId="iconLabel" class="iconLabel" />
+                    <Label bindId="titleLabel" class="titleLabel" />
+                </ItemTemplate>
+            </Templates>
+            <HeaderView>
+                <View backgroundColor="#ffffff" height="Ti.UI.SIZE">
+                    <ImageView id="imgLogoMenu" />
+                </View>
+            </HeaderView>
+            <ListSection id="headerTitle" class="headerTitle">
+              <ListItem iconLabel:text="\uf456" titleLabel:text="Request Service" itemId="mapa" />
+              <ListItem iconLabel:text="\uf38f" titleLabel:text="My Profile" itemId="myprofile" />
+              <ListItem iconLabel:text="\uf119" titleLabel:text="Payment Method" itemId="paymentmethod" />
+              <ListItem iconLabel:text="\uf48f" titleLabel:text="Promotions" itemId="promotions" />
+            </ListSection>
+        </ListView>
+    </View>
+</Alloy>

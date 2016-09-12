@@ -1,0 +1,5 @@
+<Alloy>
+	<Window title="Search Location" layout="vertical">
+		<SearchBar id="search" barColor="#ffffff" height="43" top="0" />	
+	</Window>
+</Alloy>
